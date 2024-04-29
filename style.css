@@ -42,7 +42,7 @@ body {
 }
 
 .temporary_starter_button {
-    background-color: whitesmoke;
+    background-color: rgb(170, 167, 167);
     width: 200px;
     height: 70px;
     border-radius: 20px;

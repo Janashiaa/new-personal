@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +59,8 @@ body {
     z-index: 100;
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .navbar_menu_backer {
@@ -81,4 +84,22 @@ body {
 
 .navbar_menu_backer:hover .navbar_menu_liner {
     background-color: grey;
+}
+
+.main_name_place {
+    font-family: 'Sacramento', cursive;
+    background-color: transparent;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.right_backer {
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
 }
