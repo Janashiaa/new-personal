@@ -22,6 +22,44 @@
         overflow: hidden;
     }
 
+    .mirror_effect {
+        position: absolute;
+        top: -10%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        bottom: 0;
+        width: 25px;
+        height: 150%;
+        transform: rotate(-20deg);
+        opacity: 0.5;
+        background-color: #3b87d4;
+        box-shadow: 0 0 80px 20px rgb(131, 193, 193);
+        animation: mirrorAnimation 14s linear infinite;
+    }
+    
+    @keyframes mirrorAnimation {
+        0% {
+            left: -20%;
+        }
+        12.5% {
+            left: calc(120% - 15px);
+        }
+        87.5% {
+            left: calc(120% - 15px);
+        }
+        100% {
+            left: 1000%;
+        }
+    }
+    
+    .mirror_effect:nth-child(1) {
+        animation-delay: 0s;
+    }
+    
+    .mirror_effect:nth-child(2) {
+        animation-delay: 9s;
+    }
+
     .profile_left_sider {
         background-color: transparent;
         width: 40%;
@@ -38,6 +76,7 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
+        z-index: 99;
     }
 
     .profile_right_sider {
@@ -54,12 +93,14 @@
         background-color: transparent;
         font-size: x-large;
         color: #FFD700;
+        z-index: 99;
     }
 
     .profile_info_area {
         background-color: transparent;
         font-size: medium;
         color: #FFD700;
+        z-index: 99;
     }
 
     .section_marginer {
@@ -119,7 +160,18 @@
     }
 
     .section1_logo_area {
-        background-color: black;
+        background-image: url(./mainPictures/photo-n8932.png);
+        background-size: 100%, 100%;
+        background-repeat: no-repeat;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .section2_logo_area {
+        background-image: url(./mainPictures/photo-n3781.jpg);
+        background-size: 100%, 100%;
+        background-repeat: no-repeat;
         width: 80px;
         height: 80px;
         border-radius: 50%;
@@ -234,6 +286,7 @@
         justify-content: center;
         font-size: medium;
         font-family: Arial, Helvetica, sans-serif;
+        color: #08335e;
     }
 
     .news_actual_text:hover {
