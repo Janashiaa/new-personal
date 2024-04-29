@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.workplace {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.navbar {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.navbar_menu_backer {
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar_menu_liner {
+    background-color: #03c1c1;
+    width: 100%;
+    height: 5px;
+    border-radius: 20px;
+}
+
+.navbar_menu_backer:hover .navbar_menu_liner {
+    background-color: grey;
+}
