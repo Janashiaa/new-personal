@@ -293,4 +293,32 @@
         text-decoration: underline;
         color: blue;
     }
+
+    .added_section_backer {
+        background-color: transparent;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section_inner {
+        background-color: #001F3F;
+        height: 100%;
+        width: 90%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #03c1c1;
+        font-size: x-large;
+        cursor: pointer;
+    }
+
+    .added_section_marginer {
+        background-color: transparent;
+        width: 100%;
+        height: 15px;
+    }
 }
